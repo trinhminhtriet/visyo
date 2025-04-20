@@ -114,6 +114,4 @@ fn get_version() {
     } else {
         println!("{}     {}", PKG_NAME, env!("CARGO_PKG_VERSION"));
     }
-
-    println!("libmacchina  {}", libmacchina::version());
 }
