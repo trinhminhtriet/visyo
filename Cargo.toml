@@ -1,6 +1,6 @@
 [package]
 name = "visyo"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Triet Trinh <contact@trinhminhtriet.com>"]
 edition = "2021"
 description = "A fast, minimal, and themeable CLI tool that displays visual system output across platforms."
