@@ -1,0 +1,45 @@
+[package]
+name = "visyo"
+version = "0.1.0"
+authors = ["Triet Trinh <contact@trinhminhtriet.com>"]
+edition = "2021"
+description = "A fast, minimal, and themeable CLI tool that displays visual system output across platforms."
+keywords = ["system", "fetch", "cli"]
+homepage = "https://trinhminhtriet.com"
+repository = "https://github.com/trinhminhtriet/visyo"
+license = "MIT"
+readme = "README.md"
+build = "build.rs"
+
+[dependencies]
+libmacchina = { version = "8.0.0", features = ["version"] }
+bytesize = "1.3.0"
+shellexpand = "3.1.0"
+clap = { version = "4.4.6", features = ["derive"] }
+atty= "0.2.14"
+colored = "2.0.4"
+rand = "0.8.5"
+unicode-width = "0.1.11"
+lazy_static = "1.4.0"
+ansi-to-tui = "7.0.0"
+dirs = "5.0.1"
+toml = { version = "0.8.8", features = ["parse"] }
+serde_json = "1.0.107"
+thiserror = "1.0.49"
+ratatui = { version = "0.29", default-features = false, features = ["crossterm", "serde"] }
+serde = { version = "1.0.188", features = ["derive"] }
+
+[build-dependencies.vergen]
+version = "8.2.6"
+default-features = false
+features = ["build", "cargo", "git", "rustc"]
+
+[profile.release]
+opt-level = 3
+debug = false
+lto = true
+incremental = true
+codegen-units = 1
+
+[features]
+openwrt = ["libmacchina/openwrt"]
