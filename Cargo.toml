@@ -15,7 +15,7 @@ build = "build.rs"
 libmacchina = { version = "8.1.0", features = ["version"] }
 bytesize = "2.1.0"
 shellexpand = "3.1.1"
-clap = { version = "4.5.51", features = ["derive"] }
+clap = { version = "4.5.53", features = ["derive"] }
 atty= "0.2.14"
 colored = "3.0.0"
 rand = "0.9.2"
