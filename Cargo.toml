@@ -21,7 +21,7 @@ colored = "3.0.0"
 rand = "0.9.2"
 unicode-width = "0.2.0"
 lazy_static = "1.4.0"
-ansi-to-tui = "7.0.0"
+ansi-to-tui = "8.0.0"
 dirs = "5.0.1"
 toml = { version = "0.9.8", features = ["parse"] }
 serde_json = "1.0.145"
